@@ -1,4 +1,4 @@
-# ✨ SparkleHome - Premium Cleaning Services Landing Page
+# ✨ Sparkle Home - Premium Cleaning Services Landing Page
 
 A conversion-focused, lightning-fast landing page designed specifically for local home service businesses (cleaning, plumbing, HVAC, etc.).
 
