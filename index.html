@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparkle Home | Premium Cleaning Services</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-[Inter] text-gray-800 bg-gray-50">
+
+    <nav class="bg-white shadow-sm fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <span class="text-3xl">✨</span>
+                    <span class="font-bold text-2xl text-blue-900">Sparkle Home</span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#services" class="text-gray-600 hover:text-blue-600 font-medium">Services</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-blue-600 font-medium">Reviews</a>
+                    <a href="#contact" class="bg-blue-600 text-white px-6 py-2.5 rounded-full font-bold hover:bg-blue-700 transition shadow-lg">📞 (555) 123-4567</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-blue-600 focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 pt-2 pb-4 space-y-1">
+            <a href="#services" class="block px-3 py-2 text-base font-medium text-gray-700">Services</a>
+            <a href="#testimonials" class="block px-3 py-2 text-base font-medium text-gray-700">Reviews</a>
+            <a href="#contact" class="block px-3 py-2 text-base font-bold text-blue-600">📞 (555) 123-4567</a>
+        </div>
+    </nav>
+
+    <section class="hero-bg pt-32 pb-20 lg:pt-40 lg:pb-28 mt-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="text-white">
+                    <span class="inline-block py-1 px-3 rounded-full bg-blue-500/30 border border-blue-400 backdrop-blur-sm text-sm font-semibold tracking-wide mb-4">🏆 Voted #1 Cleaning Service in Texas</span>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                        Sparkling Clean Homes, <br><span class="text-blue-300">Zero Stress.</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-lg">
+                        Get your weekends back. Our background-checked professionals use eco-friendly products to make your home shine. 100% satisfaction guaranteed.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="flex -space-x-3">
+                            <img class="w-10 h-10 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/women/1.jpg" alt="User">
+                            <img class="w-10 h-10 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/2.jpg" alt="User">
+                            <img class="w-10 h-10 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/women/3.jpg" alt="User">
+                        </div>
+                        <p class="text-sm font-medium">Trusted by 500+ <br>Happy Homeowners</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-md mx-auto lg:mx-0 w-full" id="contact">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Get a Free Quote in 60s</h3>
+                    <p class="text-gray-500 mb-6 text-sm">No credit card required. Fast response.</p>
+                    <form id="lead-form" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Full Name</label>
+                            <input type="text" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Email Address</label>
+                            <input type="email" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Phone Number</label>
+                            <input type="tel" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Select Service</label>
+                            <select class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                                <option>Standard Cleaning</option>
+                                <option>Deep Cleaning</option>
+                                <option>Move-In / Move-Out</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-lg font-bold text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors mt-4">
+                            Get My Free Quote 🚀
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-blue-900 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-white">
+                <div class="flex flex-col items-center justify-center"><span class="text-2xl mb-1">🛡️</span><span class="text-sm font-semibold">Fully Insured</span></div>
+                <div class="flex flex-col items-center justify-center"><span class="text-2xl mb-1">✔️</span><span class="text-sm font-semibold">Vetted Staff</span></div>
+                <div class="flex flex-col items-center justify-center"><span class="text-2xl mb-1">🌿</span><span class="text-sm font-semibold">Eco-Friendly</span></div>
+                <div class="flex flex-col items-center justify-center"><span class="text-2xl mb-1">⭐</span><span class="text-sm font-semibold">5-Star Rated</span></div>
+            </div>
+        </div>
+    </div>
+
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Our Premium Services</h2>
+                <p class="mt-4 text-lg text-gray-500">Tailored cleaning solutions for every home.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition duration-300">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-3xl mb-6">🧹</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Standard Cleaning</h3>
+                    <p class="text-gray-600 mb-4">Perfect for weekly or bi-weekly maintenance. Keep your home consistently fresh.</p>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-8 border border-blue-200 shadow-lg relative transform md:-translate-y-4">
+                    <div class="absolute top-0 right-0 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-xl">MOST POPULAR</div>
+                    <div class="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center text-3xl mb-6 text-white">✨</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Deep Cleaning</h3>
+                    <p class="text-gray-600 mb-4">Detailed scrub for a fresh start. Ideal for spring cleaning or post-renovation.</p>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition duration-300">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-3xl mb-6">📦</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Move-In / Move-Out</h3>
+                    <p class="text-gray-600 mb-4">Get your full deposit back with our spotless guarantee. We clean every nook and cranny.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="text-2xl">✨</span>
+                    <span class="font-bold text-xl text-white">SparkleHome</span>
+                </div>
+                <p class="text-sm">Making homes shine across Texas since 2020.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Contact Us</h4>
+                <p class="text-sm mb-2">123 Clean Street, Austin, TX 78701</p>
+                <p class="text-sm mb-2">Email: hello@sparklehome.com</p>
+                <p class="text-sm font-bold text-blue-400">Call: (555) 123-4567</p>
+            </div>
+            <div>
+                <p class="text-sm mt-8 md:mt-16 text-center md:text-right">© 2026 SparkleHome. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
